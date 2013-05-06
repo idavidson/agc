@@ -1,9 +1,65 @@
-<div class="row-fluid">
-	<div class="span11 offset1" bgcolor="#660000">
-		<P>THE ALYTH GOLF CLUB PITCROCKNIE, ALYTH, PERTHSHIRE, SCOTLAND, PH11 8HF TEL: 01828 632268 FAX: 01828 633491</p>	
+</div>
+</div>
+<div class="extra">
+	<div class="container">
+		<div class="row">
+
+			<div class="span3">
+
+				<h4>About</h4>
+
+				<ul>
+					<li><a href="javascript:;">About Us</a></li>
+					<li><a href="javascript:;">Twitter</a></li>
+					<li><a href="javascript:;">Facebook</a></li>
+					<li><a href="javascript:;">Google+</a></li>
+				</ul>
+
+			</div>
+			<div class="span3">
+				<h4>Info</h4>
+				<ul>
+					<li><a href="javascript:;">How To Find Us</a></li>
+					<li><a href="javascript:;">Our History</a></li>
+					<li><a href="javascript:;">Golfing Links</a></li>
+					<li><a href="javascript:;">Become A Member</a></li>
+				</ul>
+
+			</div>
+			<div class="span3">
+				<h4>Fixtures</h4>
+				<ul>
+				    <li><a href="javascript:;">Gents</a></li>
+				    <li><a href="javascript:;">Ladies</a></li>
+				    <li><a href="javascript:;">Juniors</a></li>
+				    <li><a href="javascript:;">Open</a></li>
+				</ul>
+			</div>
+			<div class="span3">
+			    <ul>
+				<li>The Alyth Golf Club Pitcrocknie</li>
+				<li>Perthshire</li>
+				<li>Scotland</li>
+				<li>PH11 8HF</li>
+				<li>Tel: 01828 632268</li>
+				<li>Fax: 01828 633491</li>
+				<li>Pro: 01828 632411</li>
+			    </ul>
+			</div>
+		</div>
 	</div>
 </div>
-</div>
+<div class="footer">
+	<div class="container">
+		<div class="row">
+			<div id="footer-copyright" class="span6">
+			    &copy; 2013 Alyth Golfclub
+			</div>
+			<div id="footer-terms" class="span6">
+			    <a href="mailto:info@alythgolfclub.co.uk">info@alythgolfclub.co.uk</a>
+			</div>
+		</div>
+	</div>
 </div>
 </div>     
     <script src="js/jquery/jquery.min.js"></script>
@@ -17,14 +73,14 @@
 		})
 		$( document ).ready(function() {
 			function GetURLParameter(sParam){
-    		var sPageURL = window.location.search.substring(1);
-    		var sURLVariables = sPageURL.split('&');
-    			for (var i = 0; i < sURLVariables.length; i++) {
-        		var sParameterName = sURLVariables[i].split('=');
-        		if (sParameterName[0] == sParam) {
-            	return sParameterName[1];
-        		}
-    		}
+		var sPageURL = window.location.search.substring(1);
+		var sURLVariables = sPageURL.split('&');
+			for (var i = 0; i < sURLVariables.length; i++) {
+			var sParameterName = sURLVariables[i].split('=');
+			if (sParameterName[0] == sParam) {
+		return sParameterName[1];
+			}
+		}
 			}
 			var isgents=GetURLParameter('g');
 			if (isgents==1) {
