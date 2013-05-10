@@ -3,8 +3,12 @@
   <head>
     <title>Alyth Golf Club</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <?php
+    require_once('lib/settings.class.php');
+    ?>
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet"> 
     <link href="css/custom.css" rel="stylesheet" media="screen">
   </head>
   <body>
