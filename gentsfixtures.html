@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<link rel="stylesheet" media="screen" href="js/jquerycal/jquery.calendar.css"/>
+<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+</head>
+<body>
+<div class='calendar'></div>
+	<script src="js/jquery/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquerycal/jquery.calendar.min.js"></script>
+	<script>
+		$( document ).ready(function() {
+		  $('div.calendar').cal({
+    		startdate     : '2011-08-01',
+	      daystodisplay : 5,
+	      events : [
+	          {
+	              uid     : 1,
+	              begins  : '2011-08-04 10:00:00',
+	              ends    : '2011-08-04 11:30:00',
+	              notes   : 'Testing...',
+	              color	: 'purple'
+	          },
+	          {
+	              uid     : 2,
+	              begins  : '2011-08-03 11:00:00',
+	              ends    : '2011-08-03 13:45:00',
+	              title   : 'Test'
+	          }
+	      ]
+    	 });	
+		});
+	</script>
+</body>
+</html>

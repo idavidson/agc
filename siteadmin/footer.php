@@ -1,9 +1,7 @@
-    </div>
-</div>
 <div class="extra">
     <div class="container">
         <div class="row">
-            <div class="span3">
+            <div class="span3"> 
                 <h4>About</h4>
                 <ul>
                     <li><a href="javascript:;">About Us</a></li>
@@ -48,7 +46,7 @@
     <div class="container">
         <div class="row">
             <div id="footer-copyright" class="span6">
-                &copy; 2013 Alyth Golfclub
+            &copy; 2013 Alyth Golfclub
             </div>
             <div id="footer-terms" class="span6">
                 <a href="mailto:info@alythgolfclub.co.uk">info@alythgolfclub.co.uk</a>
@@ -67,16 +65,15 @@
         $("#myModalLabel").text("Scorecard");
     })
     $( document ).ready(function() {
-        function GetURLParameter(sParam)
-        {
-            var sPageURL = window.location.search.substring(1);
-            var sURLVariables = sPageURL.split('&');
-            for (var i = 0; i < sURLVariables.length; i++) {
-                var sParameterName = sURLVariables[i].split('=');
-                if (sParameterName[0] == sParam) {
-                   return sParameterName[1];
-                }
+        function GetURLParameter(sParam){
+        var sPageURL = window.location.search.substring(1);
+        var sURLVariables = sPageURL.split('&');
+        for (var i = 0; i < sURLVariables.length; i++) {
+            var sParameterName = sURLVariables[i].split('=');
+            if (sParameterName[0] == sParam) {
+                return sParameterName[1];
             }
+        }
         }
         var isgents=GetURLParameter('g');
         if (isgents==1) {
